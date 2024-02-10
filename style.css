@@ -1,0 +1,76 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(images/background.png);
+    background-position: center;
+    background-size:cover ;
+    padding: 0 8%;
+    position: relative;
+}
+.logo{
+    padding: 20px 0;
+    width: 120px;
+    cursor: pointer;
+}
+
+.content{
+    position: absolute;
+    top: 50%;
+    color: #fff;
+    transform: translateY(-50%);
+}
+
+.content h1 {
+    font-weight: 600;
+    font-size: 35px;
+}
+.content h1 span{
+color: #ff3753;
+}
+ button{
+    background: transparent;
+    border: 2px solid  #fff;
+    text-transform: uppercase;
+    color: #fff;
+    padding: 12px 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+ }
+ button img {
+    width: 20px;
+ }
+ .lunch-time{
+    display: flex;
+    margin: 50px;
+ }
+ .lunch-time div{
+    flex-basis: 100px;
+ }
+ .lunch-time div p {
+    font-size: 60px;
+    margin-bottom: -7px;
+ }
+.rocket{
+    position: absolute;
+    right: 10%;
+    bottom: 0;
+    width: 250px;
+    animation: rocket infinite 4s linear;
+}
+@keyframes rocket {
+    0%   { 
+        opacity: 0;
+        bottom: 0;
+    }
+    100% { 
+        opacity: 1;
+        bottom: 105%;
+    }
+}
